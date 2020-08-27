@@ -1,0 +1,12 @@
+#entry-header h1 {
+    margin-bottom: 30px !important;
+}
+#entry-header h2 {
+    margin-bottom: 60px !important;
+}
+#toggle-content {
+    display: none;
+}
+.display {
+    display: block !important;
+}
