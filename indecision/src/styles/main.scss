@@ -1,3 +1,4 @@
+
 /* COLORS */
 $brand-color: #588fd6;
 $white: #FFF;
@@ -58,56 +59,36 @@ $arial: 'Arial', sans-serif;
 
 
 /*========================================*/
-/* GENERIC */
-*, html {
-    font-family: $brand-font;
-}
-
 
 /* TYPOGRAPHY */
+*, html { font-family: $brand-font; }
+
 $p-size: 1.2rem;
-h1,
-h2,
-h3,
-h4 {
-    font-family: $sans-font;
-}
-ol, ul {
-    @extend %lists;
-}
+
+h1, h2, h3, h4 { font-family: $sans-font; }
 
 
 /* LAYOUT */
-.right {
-    float: right !important;
-}
-.top-10 {
-    margin-top: 10px !important;
-}
-.top-20 {
-    margin-top: 20px !important;
-}
-.btm-10 {
-    margin-bottom: 10px !important;
-}
-.btm-20 {
-    margin-bottom: 20px !important;
-}
-.left-20 {
-    margin-left: 20px !important;
-}
-.left-10 {
-    margin-left: 10px !important;
-}
-.fl-left {
-    float: left;
-}
-.faint {
-    opacity: .3;
-}
-.uline {
-    text-decoration: underline;
-}
+.right { float: right !important; }
+
+.top-10 { margin-top: 10px !important; }
+
+.top-20 { margin-top: 20px !important; }
+
+.btm-10 { margin-bottom: 10px !important; }
+
+.btm-20 { margin-bottom: 20px !important; }
+
+.left-20 { margin-left: 20px !important; }
+
+.left-10 { margin-left: 10px !important; }
+
+.fl-left { float: left; }
+
+.faint { opacity: .3; }
+
+.uline { text-decoration: underline; }
+
 .row {
     display: block; clear: both;
     margin: 0; padding: 0;
@@ -139,35 +120,6 @@ ol, ul {
 
 
 /* PAGE STYLES */
-.btn-restore {
-    padding: 6px 12px;
-    margin: 30px;
-    border: 2px solid $brand-color;
-    color: $brand-color;
-    font-family: $sans-font;
-    font-size: .8rem;
-    font-weight: 500;
-    border-radius: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-button {
-    font-size: 80%;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    color: $link;
-}
-li button {
-    font-family: 'Open Sans', sans-serif !important;
-}
-button:focus {
-    outline: 1px solid $red;
-}
-.btn-flat-ls {
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-}
 .btn {
     padding: 10px 25px;
     margin: 0;
@@ -179,90 +131,129 @@ button:focus {
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
+    
+    &:focus {
+        @extend %border-red;
+    }
+    
+    &:disabled {
+        background-color: $disabled;
+        border-color: $disabled;
+    }
 }
-.btn:focus {
-    @extend %border-red;
+.btn-flat-ls {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
-.btn:disabled {
-    background-color: $disabled;
-    border-color: $disabled;
-}
-.btn-sm {
-    padding: 5px 15px;
-    margin: 0;
-    background-color: $white;
-    color: #333;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    font-weight: 700;
-    border: none;
+
+.btn-restore {
+    padding: 6px 12px;
+    margin: 30px;
+    border: 1px solid $brand-color;
+    color: $brand-color;
+    font-family: $sans-font;
+    font-size: .8rem;
+    font-weight: 500;
     border-radius: 0;
     box-sizing: border-box;
     cursor: pointer;
+
+    &:focus {
+        outline: none;
+        color: $link;
+        border-color: $link;
+    }
 }
-.btn-sm:focus {
-    outline: 1px solid #bb0000;
-}
+
+
 #main-wrapper {
     margin: 0; padding: 0;
-}
-#entry-main {
-    margin: 0 auto;
-    width: 800px;
-}
-#entry-header {
-    padding: 20px 0;
-}
-#entry-header h1 {
-    font-size: 2.2rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    margin: 10px 0; padding: 0;
-}
-#entry-header h2 {
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 1.5rem !important;
-    letter-spacing: .5px;
-    font-weight: 400;
-    margin: 10px 0; padding: 0;
-}
-#entry-header span {
-    font-size: 1rem !important;
-    font-weight: 600;
-    margin-top: 5px;
-    float: right;
-}
-#tasks-count {
-    float: left;
-}
-li {
-    font-size: 1.05rem;
-    font-weight: 500;
-    margin: 6px 0;
-    padding-left: 12px;
+
+    #entry-main {
+        margin: 0 auto;
+        width: 800px;
+        
+        #entry-header {
+            padding: 20px 0;
+        
+            h1 {
+                font-size: 1.6rem;
+                line-height: .8rem;
+                font-weight: 900;
+                margin: 30px 0 0; padding: 0;
+            }
+        
+            h2 {
+                font-family: 'Advent Pro', sans-serif;
+                font-size: 1.8rem !important;
+                letter-spacing: .5px;
+                font-weight: 300;
+                margin: 10px 0; padding: 0;
+        
+                span {
+                    font-size: 1rem !important;
+                    font-weight: 700;
+                    margin-top: 14px;
+                    float: right;
+                }
+            }
+        }
+        
+        #tasks-wrapper {
+            #tasks-count {
+                float: left;
+            }
+
+            ol, ul {
+                @extend %lists;
+                
+                li {
+                    font-size: 1.05rem;
+                    font-weight: 500;
+                    margin: 6px 0;
+                    padding-left: 12px;
+                    
+                    button {
+                        font-family: 'Open Sans', sans-serif !important;
+                        font-size: 80%;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid transparent;
+                        color: $link;
+                    
+                        &:focus {
+                            outline: none;
+                            border-bottom: 1px solid $link;
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+    }
 }
 
 
 /* FORMS */
 form {
     @extend %zero-space;
+    
+    input {
+        padding: 10px !important;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        height: 45px !important;
+        width: 100%;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        
+        &:focus {
+            @extend %border-red;
+        }
+    }
 }
-input {
-    padding: 10px !important;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-    height: 45px !important;
-    width: 100%;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-input:focus {
-    @extend %border-red;
-}
-// input:-webkit-autofill {
-//     -webkit-box-shadow: 0 0 0 1000px #454545 inset !important;
-//     -webkit-text-fill-color: rgb(188 218 255) !important;
-// }
