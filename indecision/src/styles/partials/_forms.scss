@@ -1,0 +1,21 @@
+/* FORMS */
+form {
+    @extend %zero-space;
+    
+    input {
+        padding: 10px !important;
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 400;
+        height: 45px !important;
+        width: 100%;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        
+        &:focus {
+            @extend %border-red;
+        }
+    }
+}

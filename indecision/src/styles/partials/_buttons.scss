@@ -1,0 +1,46 @@
+/* BUTTONS */
+.btn {
+    padding: 10px 25px;
+    margin: 0;
+    background-color: $brand-color;
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    border: 1px solid $brand-color;
+    border-radius: 5px;
+    height: 45px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+    &:focus {
+        @extend %border-red;
+    }
+    
+    &:disabled {
+        background-color: $disabled;
+        border-color: $disabled;
+    }
+}
+.btn-flat-ls {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.btn-restore {
+    padding: 6px 12px;
+    margin: 30px;
+    border: 1px solid $brand-color;
+    color: $brand-color;
+    font-family: $sans-font;
+    font-size: 1.1rem;
+    font-weight: 300;
+    border-radius: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        color: $link;
+        border-color: $link;
+    }
+}

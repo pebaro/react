@@ -1,0 +1,64 @@
+/* COLORS */
+$brand-color: #588fd6;
+$white: #FFF;
+$black: #333;
+$red: #ff7600;
+$link: #ff0080;
+$disabled: #496386;
+
+
+/* FONTS */
+html { font-size: 62.5%; }
+$brand-font: 'Advent Pro', sans-serif;
+$sans-font: 'Open Sans', sans-serif;
+$arial: 'Arial', sans-serif;
+
+
+/* MIXINS */
+@mixin border-radius( $radius ){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin border-radii( $tl-rad, $tr-rad, $br-rad, $bl-rad ){
+    -webkit-border-top-left-radius: $tl-rad;
+    -moz-border-top-left-radius: $tl-rad;
+    border-top-left-radius: $tl-rad;
+
+    -webkit-border-top-right-radius: $tr-rad;
+    -moz-border-top-right-radius: $tr-rad;
+    border-top-right-radius: $tr-rad;
+
+    -webkit-border-bottom-right-radius: $br-rad;
+    -moz-border-bottom-right-radius: $br-rad;
+    border-bottom-right-radius: $br-rad;
+
+    -webkit-border-bottom-left-radius: $bl-rad;
+    -moz-border-bottom-left-radius: $bl-rad;
+    border-bottom-left-radius: $bl-rad;
+}
+
+
+/* EXTENSIONS */
+%zero-space {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+%lists {
+    margin: 10px 0 20px 18px !important;
+    padding: 0;
+    display: block;
+    font-family: $arial;
+    letter-spacing: .05px;
+}
+%border-red {
+    border: 1px solid #bb0000;
+    outline: none !important;
+}
+
+
+/* TYPOGRAPHY */
+*, html { font-family: $brand-font; }
+h1, h2, h3, h4 { font-family: $sans-font; }
+p { font-size: 1.5rem; }
