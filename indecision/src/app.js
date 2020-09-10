@@ -2,7 +2,8 @@ import React            from 'react';                       // react
 import ReactDOM         from 'react-dom';                   // react DOM
 import IndecisionApp    from './components/IndecisionApp';  // Indecision App class
 
-import './styles/main.scss';                                 // main stylesheet
+import 'normalize.css/normalize.css';                       // css reset
+import './styles/main.scss';                                // main stylesheet
 
 
 ReactDOM.render( <IndecisionApp tasks={ [ 
