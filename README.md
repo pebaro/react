@@ -19,4 +19,4 @@
 *  2 - Babel
 *  3 - Webpack
 *  4 - HTML
-*  5 - CSS
+*  5 - CSS (written using SASS)
