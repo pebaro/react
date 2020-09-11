@@ -68,7 +68,7 @@ export default class IndecisionApp extends React.Component {
 
 
     render(){
-        const subtitle  = 'Make some choices!';
+        const subtitle  = 'Choose A Task And Get It Done!';
 
         return (
             <div id="main-wrapper">

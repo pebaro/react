@@ -5,7 +5,7 @@ const Header = ( props ) => (
         <h1>{ props.title }</h1>
         { 
             props.subtitle && 
-                <h2>{ props.subtitle }&nbsp; <span>--react -webpack -babel</span></h2> 
+                <div className="flex-row"><h2>{ props.subtitle }&nbsp; </h2> <span>--react -webpack -babel -sass</span></div>
         }
     </div>
 );

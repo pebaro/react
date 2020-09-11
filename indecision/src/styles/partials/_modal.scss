@@ -1,4 +1,17 @@
 /* MODAL PLUGIN */
+.ReactModalPortal>div {
+    opacity: 0;
+}
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 300ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
 .ReactModal__Content {
     h2 {
         font-size: 1.6rem;

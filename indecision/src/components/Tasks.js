@@ -2,9 +2,9 @@ import React    from 'react';
 import Task     from './Task';   // Task function
 
 const Tasks = ( props ) => (
-    <div className="row">
-        <div className="row">
-            <span id="tasks-count" className="col-9">
+    <div id="tasks-wrapper" className="row">
+        <div className="flex-row">
+            <span id="tasks-count">
             {
                 props.tasks.length > 0
                     ? <p>Your Tasks Are . . .</p> 

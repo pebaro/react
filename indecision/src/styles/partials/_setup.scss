@@ -47,10 +47,11 @@ $arial: 'Arial', sans-serif;
 }
 %lists {
     margin: 1.0rem 0 2.0rem 1.8rem !important;
-    padding: 0;
+    padding: 0 1.8rem 0 0;
     display: block;
     font-family: $arial;
     letter-spacing: .05rem;
+    box-sizing: border-box;
 }
 %border-red {
     border: 0.1rem solid #bb0000;
@@ -59,6 +60,6 @@ $arial: 'Arial', sans-serif;
 
 
 /* TYPOGRAPHY */
-*, html { font-family: $brand-font; }
+*, html { font-family: $brand-font; word-break: break-all; }
 h1, h2, h3, h4 { font-family: $sans-font; }
 p { font-size: 1.5rem; }

@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
 
+    .faint {
+        color: lighten($brand-color, 25%);
+    }
+
     #entry-main {
         width: 80rem;
         
@@ -28,12 +32,11 @@
                 margin: 1.0rem 0; 
                 padding: 0;
         
-                span {
-                    font-size: 1.3rem !important;
-                    font-weight: 300;
-                    margin-top: 1.4rem;
-                    float: right;
-                }
+            }
+
+            span {
+                font-size: 1.3rem !important;
+                font-weight: 300;
             }
         }
         
@@ -51,23 +54,24 @@
                     margin: 0.6rem 0;
                     padding-left: 1.2rem;
                     
-                    button {
-                        font-family: $sans-font !important;
-                        font-size: 1.1rem;
-                        padding-left: 0;
-                        padding-right: 0;
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: 0.1rem solid transparent;
-                        color: $link;
-                        cursor: pointer;
                     
-                        &:focus {
-                            outline: none;
-                            border-bottom: 0.1rem solid $link;
-                        }
+                }
+
+                button {
+                    font-family: $sans-font !important;
+                    font-size: 1.1rem;
+                    padding-left: 0;
+                    padding-right: 0;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 0.1rem solid transparent;
+                    color: $link;
+                    cursor: pointer;
+                
+                    &:focus {
+                        outline: none;
+                        border-bottom: 0.1rem solid $link;
                     }
-                    
                 }
             }
             
