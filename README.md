@@ -12,11 +12,21 @@
 * The application will not allow you to enter duplicate tasks or tasks without any text (to help avoid unintentional entries)
 
 
-* =====================
+* ======================
 * Technologies Used:
-* =================
+* ==================
 *  1 - React
 *  2 - Babel
 *  3 - Webpack
 *  4 - HTML
 *  5 - CSS (written using SASS)
+
+
+* ====================
+* Run Application:
+* ================
+*  navigate to the root of the main folder
+*  open terminal and type: npm install
+*  then in the terminal type: yarn run dev-server
+*  in the browser enter the address: localhost:8080
+
