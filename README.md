@@ -30,3 +30,9 @@
 *  then in the terminal type: yarn run dev-server
 *  in the browser enter the address: localhost:8080
 
+
+* =========
+* Note:
+* =====
+*  I have not bothered styling this for mobile as my focus has been on learning React not CSS
+*  Please view on desktop/laptop with your browser at full screen size
