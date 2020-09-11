@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 
 const modalStyles = {
     overlay: {
-        background:     'rgba(5, 5, 5, 0.7)'
+        background:     'rgb(0 40 80 / 74%)'
     },
     content: {
         top:             '15%',
@@ -14,7 +14,8 @@ const modalStyles = {
         color:           'rgb(188 218 255)',
         lineHeight:      '1.5rem',
         background:      '#333',
-        border:          '2px solid rgb(188 218 255)',
+        border:          '1px solid rgb(188 218 255)',
+        borderRadius:    '0px',
         boxShadow:       '0 0 28px 8px rgba( 0, 0, 0, 0.85 )'
     }
 }
