@@ -46,14 +46,14 @@ $arial: 'Arial', sans-serif;
     box-sizing: border-box;
 }
 %lists {
-    margin: 10px 0 20px 18px !important;
+    margin: 1.0rem 0 2.0rem 1.8rem !important;
     padding: 0;
     display: block;
     font-family: $arial;
-    letter-spacing: .05px;
+    letter-spacing: .05rem;
 }
 %border-red {
-    border: 1px solid #bb0000;
+    border: 0.1rem solid #bb0000;
     outline: none !important;
 }
 
