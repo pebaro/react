@@ -11,6 +11,10 @@
     height: 4.5rem;
     box-sizing: border-box;
     cursor: pointer;
+
+    &:hover {
+        background-color: lighten($brand-color, 5%);
+    }
     
     &:focus {
         @extend %border-red;
@@ -19,6 +23,7 @@
     &:disabled {
         background-color: $disabled;
         border-color: $disabled;
+        cursor: unset;
     }
 }
 .btn-flat-ls {
